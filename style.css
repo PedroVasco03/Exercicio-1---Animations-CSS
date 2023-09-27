@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh; 
+}
+
+.content{
+    width: 50vw;
+    height: 100vh;
+    animation-name: mudaCor;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 0;
+    align-items: center;
+    background-color: blue;
+}
+
+.content2{
+    width: 50vw;
+    height: 100vh;
+    animation-name: mudaCor2;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    border-radius: 0;
+    align-items: center;
+    animation-direction: alternate;
+    background-color: red;
+}
+
+@keyframes mudaCor{
+    from{background-color: blue;}
+    to{background-color: red;}
+}
+
+@keyframes mudaCor2{
+    from{background-color: red;}
+    to{background-color: blue;}
+}
